@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    <title>Time Sheet</title>
+  </head>
+  <body>
+    <div>
+      <form id="myForm">
+        <legend>Rechnung</legend>
+
+        <label for="stunden">Arbeitsstunden</label>
+        <input type="number" id="stunden" min="0" value="0" steps="0.25" />
+
+        <label for="satz">Stundensatz (€)</label>
+        <input type="number" id="satz" min="8,5" value="48.50" step="0.50" />
+
+        <label for="mwst">MWST (%)</label>
+        <input type="number" id="mwst" min="0" value="19" />
+
+        <p>
+          <span>Gesamt:</span>
+          <output id="betrag" for="stunden satz mwst">0</output>
+          €
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
