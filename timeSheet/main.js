@@ -1,9 +1,9 @@
 document.getElementById("myForm").addEventListener("input", rechne);
 
 function rechne() {
-    let stunden = document.getElementById('stunden'),
-        satz = document.getElementById('sat'),
-        mwst = document.getElementById('mwst');
+    let stunden = document.getElementById('stunden');
+    let satz = document.getElementById('satz');
+    let mwst = document.getElementById('mwst');
 
     let summe = stunden.valueAsNumber * satz.valueAsNumber * (1 + mwst.valueAsNumber/100);
 
