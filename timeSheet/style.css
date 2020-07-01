@@ -1,0 +1,40 @@
+:root {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  color: #333;
+  background-color: lightsalmon;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.main {
+  display: block;
+}
+
+form {
+  border: thin solid #666;
+  width: 20em;
+  padding: 1em;
+}
+
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 10em;
+}
+
+input {
+  text-align: right;
+}
+
+p {
+  font-weight: bold;
+}
